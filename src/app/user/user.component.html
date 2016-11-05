@@ -1,0 +1,20 @@
+<div
+  class="user" [class.selected]="isSelected">
+  <div
+    class="avatar">
+    <img
+      src="{{user.img_url}}"
+      alt="{{user.name}}">
+    <div
+      class="status" [ngClass]="{'online':user.online, 'off':!user.online}"></div>
+  </div>
+  <div
+    class="name">
+    {{user.name}}
+  </div>
+  <div
+    class="mood">
+    User
+    mood
+  </div>
+</div>
